@@ -1,3 +1,12 @@
+# Portfolio (React version)
+
+My personal portfolio page, rewritten in React.
+
+Deployed site can be found here:
+https://thebobbyllama.github.io/portfolio-react/
+
+![Project Screenshot](/snapshot.jpg?raw=true)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
