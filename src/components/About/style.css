@@ -1,0 +1,22 @@
+section#about {
+	position: relative;
+}
+
+section#about img {
+	float: right;
+	height: 300px;
+	margin: 10px 0px 10px 10px;
+	width: 300px;
+}
+
+section#about li {
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	section#about img {
+		display: block;
+		float: none;
+		margin: 10px 0px;
+	}
+}

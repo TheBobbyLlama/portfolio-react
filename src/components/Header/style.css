@@ -1,0 +1,64 @@
+header {
+	align-items: center;
+	background-color: var(--content-background);
+	background-image: url("../../assets/images/banner.jpg");
+	background-position: 0px -400px;
+	background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+	height: 150px;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+header::after {
+	background: linear-gradient(transparent, var(--page-background));
+	content: "";
+    height: 100%;
+	left: 0;
+	position: absolute;
+    top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+header h1 {
+	margin-left: 50px;
+	text-shadow: 0 0 5px var(--page-background);
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 980px) {
+	header {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		background-position: 0px -200px;
+		flex-flow: column;
+		justify-content: space-around;
+		position: relative;
+		z-index: 0;
+	}
+	
+	header h1 {
+		margin: 20px 0px 0px 0px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	header {
+		background-position: 0px -100px;
+		height: 180px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	header {
+		background-position: 0px 0px;
+	}
+}

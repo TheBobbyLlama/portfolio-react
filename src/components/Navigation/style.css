@@ -1,0 +1,141 @@
+nav {
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: var(--nav-width);
+	z-index: 1000;
+}
+
+nav div {
+	align-items: center;
+	background-color: var(--content-background);
+	border: solid 2px var(--content-border);
+	border-radius: 34px;
+	display: flex;
+	justify-content: flex-end;
+	margin: 20px;
+	overflow: hidden;
+	padding: 10px;
+	transition-duration: 0.5s;
+
+}
+
+nav h3 {
+	color: var(--content-color);
+	font-size: 20px;
+	margin-left: 20px;
+	order: 2;
+	position: relative;
+	right: 10px;
+	transition-delay: 0.25s;
+	transition-duration: 0.5s;
+	writing-mode: vertical-rl;
+}
+
+nav li {
+	background-color: var(--button-background);
+	border: solid 2px var(--button-border);
+	border-radius: 6px;
+	white-space: nowrap;
+}
+
+nav li {
+	left: -100px;
+	margin: 8px 0px 8px 0px;
+	overflow: hidden;
+	position: relative;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	width: 0px;
+}
+
+nav span {
+	color: var(--button-color);
+	display: block;
+	padding: 4px;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav li.curSection {
+	background-color: var(--inset-background);
+	border-color: var(--inset-border);
+	cursor: default;
+}
+
+nav li.curSection span {
+	color: var(--button-background);
+}
+
+nav li:not(.curSection) {
+	cursor: pointer;
+}
+
+nav li:not(.curSection):hover {
+	background-color: var(--button-highlight);
+}
+
+nav ul {
+	list-style: none;
+	width: 100%;
+}
+
+nav:hover {
+	width: auto;
+}
+
+nav:hover div {
+	border-radius: 20px;
+	padding-left: 10px;
+	width: 100%;
+}
+
+nav:hover h3 {
+	right: 0;
+}
+
+nav:hover li {
+	left: 0;
+	margin: 8px;
+	width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+	nav, nav:hover {
+		position: static;
+		width: 100%;
+	}
+
+	nav div {
+		background: none;
+		border: none;
+		margin: 0px;
+		overflow: none; 
+		width: 100%;
+	}
+
+	nav h3 {
+		display: none;
+	}
+
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	nav li, nav:hover li {
+		left: 0;
+		margin: 8px;
+		overflow: visible;
+		width: 120px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		justify-content: space-around;
+	}
+}

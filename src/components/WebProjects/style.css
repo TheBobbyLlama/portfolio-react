@@ -1,0 +1,131 @@
+.showcase {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	transition: 0.5s;
+}
+
+.showcase > div > a {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: flex-end;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	z-index: 5;
+}
+
+.showcase h3, .showcase p {
+	color: var(--button-background);
+	padding: 0 20px;
+	position: relative;
+	text-shadow: 0 0 5px var(--page-background);
+	transition: 0.5s;
+}
+
+.showcase p {
+	max-height: 0px;
+	overflow: hidden;
+	transition: background-color 0.5s, max-height 1s;
+}
+
+.showcase div {
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
+	transition: 0.5s;
+	width: 300px;
+}
+
+.showcase div:hover {
+	height: 320px;
+	margin: 0px;
+	width: 320px;
+}
+
+.showcase div:hover h3 {
+	background-color: var(--content-background);
+	font-size: 22px;
+	margin-top: 4px;
+}
+
+.showcase div:hover p {
+	background-color: var(--content-background);
+	max-height: 200px;
+}
+
+.showcase div::after {
+	background: linear-gradient(transparent, var(--page-background));
+	bottom: 0px;
+    content: "";
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	transition: 0.5s;
+	width: 100%;
+}
+
+.showcase div:hover::after {
+	bottom: -100%;
+}
+
+.showcase div:first-child {
+	width: 620px;
+}
+
+.showcase div:first-child:hover {
+	width: 640px;
+}
+
+section:hover .showcase div::after {
+	background: linear-gradient(transparent, var(--content-background));
+	transition: 0.5s;
+}
+
+.showcase-hopto {
+	background-image: url(https://user-images.githubusercontent.com/64815650/87613461-00ada300-c6d3-11ea-92d9-47cded5c1550.png?raw=true);
+}
+
+.showcase-esorp {
+	background-image: url(https://github.com/TheBobbyLlama/eso-roleplay/blob/master/charsheet.png?raw=true);
+}
+.showcase-pagebound {
+	background-image: url(https://github.com/TheBobbyLlama/pagebound/blob/master/Snapshot.png?raw=true);
+}
+
+@media screen and (max-width: 980px) {
+	.showcase div h3 {
+		background-color: var(--content-background);
+		font-size: 22px;
+	}
+	
+	.showcase div p {
+		background-color: var(--content-background);
+		max-height: 500px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.showcase {
+		justify-content: space-around;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.showcase div:first-child, .showcase div:first-child:hover {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.showcase div, .showcase div:hover {
+		height: 240px;
+		width: 240px;
+	}
+}

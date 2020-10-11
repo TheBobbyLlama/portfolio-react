@@ -1,0 +1,136 @@
+.inset {
+	background-color: var(--page-background);
+	border: solid 2px var(--inset-border);
+	border-radius: 10px;
+	margin: 20px;
+	padding: 14px;
+}
+
+/* Eat any unnecessary spacing. */
+.inset > *:last-child {
+	margin-bottom: 0px;
+}
+
+.stackedcontent {
+	align-items: stretch;
+	color: #d0d0e0;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0px;
+}
+
+.stackedcontent a {
+	color: #90c0a8;
+}
+
+.stackedcontent a:visited {
+	color: #709080;
+}
+.stackedcontent div {
+	background-color: var(--page-background);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	border: solid 2px var(--inset-border);
+	border-radius: 6px;
+	padding: 10px 30% 10px 10px;
+	transition: 0.5s;
+}
+
+.stackedcontent div:hover {
+	background-color: var(--content-background);
+}
+
+.stackedcontent div + div {
+	margin-top: 10px;
+}
+
+.stackedcontent h4 {
+	color: #f0f0ff;
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+
+.stackedcontent li {
+	display: inline;
+}
+
+.stackedcontent li + li::before{
+	content: " / "
+}
+
+.stackedcontent ul {
+	list-style: none;
+}
+
+.dwemermatron {
+	background-image: url(../../assets/images/skyrim-dwemermatron.jpg);
+}
+
+.reincarnation {
+	background-image: url(../../assets/images/skyrim-reincarnation.jpg);
+}
+
+.rmao {
+	background-image: url(../../assets/images/skyrim-RMAO.gif);
+}
+
+@media screen and (max-width: 768px) {
+	.inset {
+		margin: 10px 0 0 0;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.inset {
+		margin: 10px -10px 0px -10px;
+	}
+
+	.stackedcontent div {
+		background-color: var(--content-background);
+		padding: 10px;
+	}
+
+	.stackedcontent li {
+		display: list-item;
+		margin-left: 20px;
+	}
+
+	.stackedcontent li + li::before {
+		content: "";
+	}
+
+	.stackedcontent ul {
+		list-style: initial;
+	}
+
+	.stackedcontent p {
+		margin: 10px 0px;
+	}
+
+	.dwemermatron, .reincarnation, .rmao {
+		background-image: none;
+	}
+
+	.dwemermatron h4, .reincarnation h4, .rmao h4 {
+		background-position: center;
+		background-size: cover;
+		color: transparent;
+		display: block;
+		margin: 0px auto;
+		padding-top: 75%;
+		width: 100%;
+	}
+
+	.dwemermatron h4 {
+		background-image: url(../../assets/images/skyrim-dwemermatron.jpg);
+	}
+
+	.reincarnation h4 {
+		background-image: url(../../assets/images/skyrim-reincarnation.jpg);
+	}
+
+	.rmao h4 {
+		background-image: url(../../assets/images/skyrim-RMAO.gif);
+	}
+}

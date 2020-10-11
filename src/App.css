@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+:root {
+	--page-background: #181820;
+	--content-color: #e0e0f0;
+	--content-background: #303038;
+	--inset-background: #505058;
+	--inset-border: #404048;
+	--button-color: #183828;
+	--button-background: #c8f0d0;
+	--button-border: #709080;
+	--button-highlight: #e8f0ec;
+
+	--nav-width: 160px;
+}
+  
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+	color: #508068;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a:visited {
+	color: #406050;
+}
+
+body {
+	background-color: var(--page-background);
+	color: var(--content-color);
+	font-family: sans-serif;
+	margin-bottom: 80px; /* Space at the bottom for the Contact panel. */
+}
+
+h1, h2, h3, h4 {
+	color: var(--button-background);
+	font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+	font-weight: lighter;
+}
+
+p + p {
+	margin-top: 8px;
+}
+
+section {
+	background-color: transparent;
+	border-radius: 4px;
+	margin: 20px var(--nav-width) 20px 20px;
+	padding: 10px 20px 20px 20px;
+	transition: 1s;
+}
+
+/* clearfix from w3schools.com */
+section::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+section h2 {
+	display: inline-block;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+section h2::after {
+	border-bottom: solid 4px var(--button-background);
+	bottom: -2px;
+	content: "";
+	display: block;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	transition: 0.5s;
+	width: 0%;
+}
+
+section:hover {
+	background-color: var(--content-background);
+}
+
+section:hover h2::after {
+	width: 100%;
+}
+
+/* Eat any unnecessary spacing. */
+section > *:last-child {
+	margin-bottom: 0px;
+}
+
+.preheader {
+	background-color: var(--content-background);
+	background-image: url("./assets/images/banner.jpg");
+	background-position: 0px -200px;
+	background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+	transition: 1s ease-in-out;
+}
+
+.preheader.collapse {
+  background-position: 0px -400px;
+  height: 0px;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+		margin: 0px;
+  }
+
+  section {
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section, section#contact {
+		padding-bottom: 10px;
+	}
+
+	section h2::after {
+		width: 100%;
+	}
+
+	section:hover {
+		background-color: transparent;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width: 575px) {
+	section {
+		background-color: var(--content-background);
+		margin: 10px;
+	}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+	section:hover {
+		background-color: var(--content-background);
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+  .preheader {
+		display: none;
+	}
 }
