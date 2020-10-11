@@ -10,7 +10,7 @@ function Navigation({ sections, curSection, changeSection }) {
 				{sections.map((section) => (
 					<li
 					key={section.id}
-					className={(section.id === curSection) && "curSection"}
+					className={(section.id === curSection) ? "curSection" : ""}
 					>
 						{ (section.id === curSection) ?
 							<span>{section.display}</span>

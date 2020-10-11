@@ -61,13 +61,13 @@ section::after {
 	display: table;
 }
 
-section h2 {
+section > h2 {
 	display: inline-block;
 	margin-bottom: 10px;
 	position: relative;
 }
 
-section h2::after {
+section > h2::after {
 	border-bottom: solid 4px var(--button-background);
 	bottom: -2px;
 	content: "";
@@ -83,7 +83,7 @@ section:hover {
 	background-color: var(--content-background);
 }
 
-section:hover h2::after {
+section:hover > h2::after {
 	width: 100%;
 }
 
@@ -107,11 +107,11 @@ section > *:last-child {
   height: 0px;
 }
 
-@media screen and (max-width: 980px) {
-  body {
-		margin: 0px;
-  }
+.show {
+	display: block !important;
+}
 
+@media screen and (max-width: 980px) {
   section {
 		margin-right: 20px;
 	}

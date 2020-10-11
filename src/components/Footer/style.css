@@ -1,0 +1,33 @@
+footer {
+	background-color: var(--button-background);
+	border-top: solid 2px var(--button-border);
+	color: var(--button-color);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: 10;
+}
+
+footer a {
+	transition: 0.5s;
+}
+
+footer a:hover {
+	opacity: 0.75;
+}
+
+footer a img {
+	height: 48px;
+	width: 48px;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+	display: block;
+	margin: 10px;
+}

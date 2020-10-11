@@ -1,0 +1,119 @@
+#modalBG {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.75);
+	bottom: 0;
+	display: flex !important;
+	height: auto;
+	justify-content: center;
+	left: 0 ;
+	margin: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: auto;
+	z-index: 1000;
+}
+
+#modalBG > div {
+	background-color: var(--content-background);
+	border: solid 2px var(--page-background);
+	border-radius: 10px;
+	display: block;
+	margin: 20px;
+	max-height: 95%;
+	overflow: auto;
+	padding: 10px 20px;
+	width: 80%;
+}
+
+#modalBG > div > div:last-child {
+	display: flex;
+	justify-content: center;
+}
+
+#modalBG button {
+	background-color: var(--button-background);
+	border: solid 2px var(--button-border);
+	border-radius: 6px;
+	cursor: pointer;
+	margin: 10px;
+	padding: 2px 8px;
+	white-space: nowrap;
+}
+
+#modalBG button:hover {
+	background-color: var(--button-highlight);
+}
+
+#modalBG h2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#modalBG a {
+	color: var(--button-background);
+}
+
+#modalBG a:visited {
+	opacity: 0.75;
+}
+
+#modalBG a:hover {
+	color: var(--button-highlight);
+}
+
+#modalBG .linkholder {
+	background-color: var(--page-background);
+	border-radius: 4px;
+	margin: 20px 40px;
+	padding: 8px;
+}
+
+#modalBG > div > div {
+	text-align: center;
+}
+
+#modalBG li {
+	margin-left: 20px;
+}
+
+#modalBG > p, #modalBG ul {
+	margin: 10px;
+}
+
+#modalBG iframe {
+	background-color: white;
+	border: none;
+	border-radius: 8px;
+	display: block;
+	max-height: 600px;
+	min-height: 400px;
+	margin: 10px 0px;
+	width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+	#modalBG > div {
+		width: 90%;
+	}
+
+	#modalBG iframe {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#modalBG > div {
+		margin: 0px;
+		padding: 10px;
+		width: 100%;
+	}
+
+	#modalBG iframe {
+		height: 300px;
+	}
+
+	#modalBG .linkholder {
+		margin: 20px 10px;
+	}
+}

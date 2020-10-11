@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import About from "./components/About";
 import WebProjects from "./components/WebProjects";
 import OtherProjects from "./components/OtherProjects";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -10,6 +13,7 @@ function App() {
     { id: "about", display: "About Me" },
     { id: "web", display: "Web Projects" },
     { id: "other", display: "Other Projects" },
+    { id: "resume", display: "Resume" },
     { id: "contact", display: "Contact" }
   ]);
 
@@ -34,7 +38,10 @@ function App() {
           {(curSection.id === "about") && <About />}
           {(curSection.id === "web") && <WebProjects />}
           {(curSection.id === "other") && <OtherProjects />}
+          {(curSection.id === "resume") && <Resume />}
+          {(curSection.id === "contact") && <Contact />}
         </section>
+        <Footer />
       </main>
     </div>
   );

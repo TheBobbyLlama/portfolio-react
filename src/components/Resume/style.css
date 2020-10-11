@@ -1,0 +1,42 @@
+#proficiencies {
+	margin-left: 20px;
+}
+
+#proficiencies li span::before {
+	content: ' - ';
+}
+
+#resume h3 {
+	margin: 20px 0px 10px 0px;
+}
+
+#resumeLink {
+	background-color: var(--button-background);
+	border: solid 2px var(--button-border);
+	border-radius: 6px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px;
+	padding: 2px 8px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#resumeLink:hover {
+	background-color: var(--button-highlight);
+}
+
+@media screen and (max-width: 575px) {
+	#proficiencies li span {
+		display: block;
+		margin-left: 10px;
+	}
+
+	#proficiencies li span::before {
+		content: '';
+	}
+
+	#proficiencies li strong::after {
+		content: ':';
+	}
+}
