@@ -33,8 +33,8 @@ function WebProjects(props) {
 				<li>A game master's screen for running sessions.</li>
 			</ul>
 			<p>ESO Roleplay was made with HTML/CSS/Javascript/JQuery, and uses <a href="https://firebase.google.com/" target="_blank">Google Firebase</a> to store data.</p>`,
-			link: "https://thebobbyllama.github.io/eso-roleplay/",
-			github: "https://github.com/TheBobbyLlama/eso-roleplay",
+			link: "https://eso-rollplay.net/",
+			github: "https://github.com/TheBobbyLlama/eso-rollplay",
 		},
 		{
 			id: "tech-blog",
