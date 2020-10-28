@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.26435c75.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.366be489.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.366be489.chunk.js.map",
+    "main.css": "/portfolio-react/static/css/main.6a42660f.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.18db897f.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.18db897f.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.a4de92d3.js",
     "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.a4de92d3.js.map",
     "static/js/2.13de9edb.chunk.js": "/portfolio-react/static/js/2.13de9edb.chunk.js",
     "static/js/2.13de9edb.chunk.js.map": "/portfolio-react/static/js/2.13de9edb.chunk.js.map",
     "index.html": "/portfolio-react/index.html",
-    "precache-manifest.4d23ebf6b3f9be1aae205bddad73b4e1.js": "/portfolio-react/precache-manifest.4d23ebf6b3f9be1aae205bddad73b4e1.js",
+    "precache-manifest.84cd4e4c2188dbccbc22ec02737ded74.js": "/portfolio-react/precache-manifest.84cd4e4c2188dbccbc22ec02737ded74.js",
     "service-worker.js": "/portfolio-react/service-worker.js",
-    "static/css/main.26435c75.chunk.css.map": "/portfolio-react/static/css/main.26435c75.chunk.css.map",
+    "static/css/main.6a42660f.chunk.css.map": "/portfolio-react/static/css/main.6a42660f.chunk.css.map",
     "static/js/2.13de9edb.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.13de9edb.chunk.js.LICENSE.txt",
     "static/media/Resume - Bob Feuerstein.pdf": "/portfolio-react/static/media/Resume - Bob Feuerstein.4907a818.pdf",
     "static/media/App.css": "/portfolio-react/static/media/banner.2cd12fe7.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.a4de92d3.js",
     "static/js/2.13de9edb.chunk.js",
-    "static/css/main.26435c75.chunk.css",
-    "static/js/main.366be489.chunk.js"
+    "static/css/main.6a42660f.chunk.css",
+    "static/js/main.18db897f.chunk.js"
   ]
 }
