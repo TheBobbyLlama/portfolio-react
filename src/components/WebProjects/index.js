@@ -5,6 +5,15 @@ import "./style.css";
 function WebProjects(props) {
 	const projectInfo = [
 		{
+			id: "projectivity",
+			name: "Projectivity",
+			description: `Track your projects and manage timesheets in this all-in-one productivity solution.`,
+			details: `<p>Projectivity was the final group project of UW Coding Bootcamp.  I primarily worked on the Groups page and the time tracker widget, as well as backend query support and creating the site's logo.</p>
+			<p>This is a full stack MERN application - Mongo, Express, React, and Node.  Other technologies used include JSON Web Tokens, GraphQL, and Apollo Client/Server</p>`,
+			link: "https://evening-dawn-14533.herokuapp.com/",
+			github: "https://github.com/alexo-a/projectivity",
+		},
+		{
 			id: "hopto",
 			name: "Hop To",
 			description: `Find breweries either in your hometown or while on vacation, and plan a trip to see them!`,
@@ -43,14 +52,6 @@ function WebProjects(props) {
 			details: `<p>This was an assignment for UW Coding Bootcamp to create a full stack site using Node.js, Express, MySQL, and Sequelize.</p>`,
 			link: "https://dry-tundra-54931.herokuapp.com/",
 			github: "https://github.com/TheBobbyLlama/tech-blog"
-		},
-		{
-			id: "weather-dashboard",
-			name: "Weather Dashboard",
-			description: `A sample project using a third party API.`,
-			details: `<p>This was an assignment for UW Coding Bootcamp to pull in weather data and save the user's prior searches.</p>`,
-			link: "https://thebobbyllama.github.io/weather-dashboard/",
-			github: "https://github.com/TheBobbyLlama/weather-dashboard"
 		},
 		{
 			id: "obfuscator",

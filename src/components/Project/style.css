@@ -77,7 +77,7 @@
 	width: 640px;
 }
 
-.project-card::after {
+section:hover .project-card::after {
 	background: linear-gradient(transparent, var(--content-background));
 	transition: 0.5s;
 }
@@ -94,12 +94,13 @@
 	background-image: url(https://github.com/TheBobbyLlama/pagebound/blob/master/Snapshot.png?raw=true);
 }
 
-.showcase-tech-blog {
-	background-image: url(https://github.com/TheBobbyLlama/tech-blog/blob/master/snapshot.png?raw=true);
+/* TODO - Better screenshot to come. */
+.showcase-projectivity {
+	background-image: url(https://github.com/alexo-a/projectivity/blob/main/client/public/logo512.png?raw=true);
 }
 
-.showcase-weather-dashboard {
-	background-image: url(https://github.com/TheBobbyLlama/weather-dashboard/blob/master/Snapshot.png?raw=true);
+.showcase-tech-blog {
+	background-image: url(https://github.com/TheBobbyLlama/tech-blog/blob/master/snapshot.png?raw=true);
 }
 
 .showcase-obfuscator {
